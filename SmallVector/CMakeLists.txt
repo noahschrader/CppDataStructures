@@ -1,0 +1,1 @@
+add_executable(svo_vector Main.cpp)

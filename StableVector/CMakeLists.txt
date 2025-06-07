@@ -1,0 +1,3 @@
+add_executable(stable_vector Main.cpp)
+
+target_link_libraries(stable_vector PRIVATE boost_container benchmark)

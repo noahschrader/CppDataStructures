@@ -1,0 +1,1 @@
+add_executable(fast_queue Main.cpp QConsumer.cpp QProducer.cpp)
