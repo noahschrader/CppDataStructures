@@ -1,4 +1,4 @@
-add_executable(unittests Main.cpp)
+add_executable(unit_tests Main.cpp)
 
-target_link_libraries(unittests PRIVATE Catch2Main Catch2)
-target_include_directories(unittests PRIVATE ${PROJECT_SOURCE_DIR})
+target_link_libraries(unit_tests PRIVATE Catch2Main Catch2)
+target_include_directories(unit_tests PRIVATE ${PROJECT_SOURCE_DIR})

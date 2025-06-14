@@ -1,1 +1,1 @@
-add_executable(svo_vector Main.cpp)
+add_library(small_vector INTERFACE)

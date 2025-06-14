@@ -1,3 +1,3 @@
-add_executable(stable_vector Main.cpp)
+add_library(stable_vector INTERFACE)
 
-target_link_libraries(stable_vector PRIVATE boost_container benchmark)
+target_link_libraries(stable_vector INTERFACE boost_container benchmark)
