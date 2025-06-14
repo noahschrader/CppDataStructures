@@ -7,6 +7,7 @@ include_directories(/opt/homebrew/include)
 link_directories(/opt/homebrew/lib)
 
 add_subdirectory(FastQueue)
-add_subdirectory(SmallVectorOptimization)
+add_subdirectory(SmallVector)
 add_subdirectory(SPMCQueue)
 add_subdirectory(StableVector)
+add_subdirectory(UnitTests)

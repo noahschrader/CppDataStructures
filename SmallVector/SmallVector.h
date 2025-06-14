@@ -1,8 +1,9 @@
 #include <array>
 
-template <class T, size_t InlineSize>
+template <class T, size_t InlineSize = 1>
 class SmallVector
 {
+    static_assert(InlineSize > 0, "InlineSize must be greater than 0");
 public:
     ~SmallVector()
     {
@@ -45,6 +46,16 @@ public:
     T* data()
     {
         return m_dynamic ? reinterpret_cast<T*>(m_dynamic) : reinterpret_cast<T*>(m_static.data());
+    }
+
+    size_t size()
+    {
+        return m_size;
+    }
+
+    size_t capacity()
+    {
+        return m_capacity;
     }
 
 private:
