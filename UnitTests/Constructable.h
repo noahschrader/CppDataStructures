@@ -6,7 +6,7 @@ public:
         ++constructorCalls;
     }
 
-    Constructable(int v) : value(v)
+    explicit Constructable(int v) : value(v)
     {
         ++constructorCalls;
     }

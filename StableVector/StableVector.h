@@ -12,8 +12,8 @@ struct StableVector
         {
             m_chunks.push_back(std::make_unique<Chunk>());
         }
-        ++m_size;
         m_chunks.back()->push_back(t);
+        ++m_size;
     }
 
     T& operator[](size_t i)

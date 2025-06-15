@@ -99,10 +99,10 @@ TEST_CASE("DirectArrayAccess", "[SmallVector]")
     SmallVector<Constructable, 4> sv;
     REQUIRE(sv.capacity() == 4);
     REQUIRE(Constructable::GetConstructorCalls() == 0);
-    sv.push_back(1);
-    sv.push_back(2);
-    sv.push_back(3);
-    sv.push_back(4);
+    sv.push_back(Constructable(1));
+    sv.push_back(Constructable(2));
+    sv.push_back(Constructable(3));
+    sv.push_back(Constructable(4));
     REQUIRE(sv.size() == 4);
     REQUIRE(Constructable::GetConstructorCalls() == 8);
     for(size_t i = 0; i < sv.size(); ++i) 
